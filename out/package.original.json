@@ -1,11 +1,11 @@
 {
   "name": "cdk-starter",
   "version": "0.1.0",
-  "license": "MIT",
   "bin": {
     "cdk-starter": "bin/cdk-starter.js"
   },
   "scripts": {
+    "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
@@ -17,8 +17,11 @@
     "ts-jest": "^29.1.1",
     "aws-cdk": "2.111.0",
     "ts-node": "^10.9.1",
-    "typescript": "~5.2.2",
+    "typescript": "~5.2.2"
+  },
+  "dependencies": {
     "aws-cdk-lib": "2.111.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
   }
 }
